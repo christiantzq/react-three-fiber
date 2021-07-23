@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zen+Dots&display=swap');
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome{
+  margin: 15rem auto 0 auto;
+
+  font-family: 'Zen Dots','VT323', monospace;
+  border: dashed 1px darkgray;
+  max-width: fit-content;
+}
+
+.welcome h1 {
+  color: #04F2C6;
+  font-size: 90px;  
+  margin: 0;
+  /* margin-bottom: 0.5rem; */
+  /* line-height: 1em;   */
+}
+
+.welcome h2{
+  color: #04F2C6;
+  font-size: 70px;  
+  margin: 0;
+}
+
+.welcome h3 {
+  text-align: right;
+  color: #D414F3;
+  font-size: 30px;  
+  margin: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.progress {
+
+}
+
+@keyframes changewidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.transition {
+  display: inline-block;
+  position: absolute !important;
+  transition: all 0.5s ease;
+  transition-property: opacity, transform;
+  color: #3D99E9;
+  /* text-shadow: 0 0 3px black, 0 0 5px aqua; */
+  /* font-family: 'VT323', monos1pace; */
+}
+
+.transition.vertical[hidden] {
+  transition-delay: 0s;
+  opacity: 0;
+  transform: translate3d(0, -20px, 0) !important;
+}
+
+.transition.horizontal[hidden] {
+  transition-delay: 0s;
+  opacity: 0;
+  transform: translate3d(30px, 0, 0) !important;
+}
